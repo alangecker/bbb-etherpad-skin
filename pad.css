@@ -35,14 +35,13 @@ html {
 .toolbar ul.menu_right {
     padding-right: 16px;
 }
-@media only screen and (max-width:800px) {
-    .toolbar ul.menu_right {
-        position: relative;
-        border-top: none;
-        background: none;
-        padding: none;
-    }
+.mobile-layout .toolbar ul.menu_right {
+    position: relative;
+    border-top: none;
+    background: none;
+    padding: none;
 }
+
 .toolbar ul.menu_right li[data-key="savedRevision"] {
     display: none;
 }
@@ -114,6 +113,7 @@ html {
 /*Huge thanks to @tobiasahlin at http://tobiasahlin.com/spinkit/ */
 .spinner {
     margin: auto;
+    margin-top: 3em;
     width: 50%;
     text-align: center;
 }
